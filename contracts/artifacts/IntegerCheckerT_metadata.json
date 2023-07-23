@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "num",
+						"type": "int256"
+					}
+				],
+				"name": "checkInt",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/IntegerCheckUsingTernary.sol": "IntegerCheckerT"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/IntegerCheckUsingTernary.sol": {
+			"keccak256": "0x06ecec0a5f111b8df243a37cae0440b2c1b7d37932ab36ea38fd5f4f6f1de93a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d5db41f3999b7c2a5e13df0f88113b362f343e9e14b7dbc497e3c59b8ef0fba6",
+				"dweb:/ipfs/QmVqtdS6hAnE3UoBSn1cdi4cMmk5GQoer1VsE1dUEysopc"
+			]
+		}
+	},
+	"version": 1
+}

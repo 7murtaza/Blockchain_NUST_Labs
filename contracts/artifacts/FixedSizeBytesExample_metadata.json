@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fixedData",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFixedDataLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_data",
+						"type": "bytes32"
+					}
+				],
+				"name": "setFixedData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/bytes.sol": "FixedSizeBytesExample"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/bytes.sol": {
+			"keccak256": "0xc0295e06ed463095d3faebb2a1bfbdbbabd9285a96f4e42d2acfda2f4aad9ba1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7f44c52fada0c9e85e81fefb875359ee7f4ca26e4aea82959a83f9f3338fe018",
+				"dweb:/ipfs/QmVbqkgaxpHZiKQycdjDhKvzjE8y7tzRucevaHfmanzoAn"
+			]
+		}
+	},
+	"version": 1
+}

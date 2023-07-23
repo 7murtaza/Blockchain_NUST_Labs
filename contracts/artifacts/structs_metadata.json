@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "enum structs.weekdays",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					},
+					{
+						"internalType": "enum structs.weekdays",
+						"name": "day",
+						"type": "uint8"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/enumsAndStructPractice.sol": "structs"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/enumsAndStructPractice.sol": {
+			"keccak256": "0xec62605f4018bc3ef6ff01aecaf1c2eff96c32cd4c133de004fe460aa6aaa253",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eae103c59a13b1b1e52877c574d70882379082e7988ce17572f141a2ca052446",
+				"dweb:/ipfs/QmSZsANLTWK5Xju4ruPHU8uEZBvN8X3nRX68pVngcGJDfC"
+			]
+		}
+	},
+	"version": 1
+}

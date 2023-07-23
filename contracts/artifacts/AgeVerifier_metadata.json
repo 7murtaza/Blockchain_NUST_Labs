@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"name": "checkEligibility",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AgeVerifiers.sol": "AgeVerifier"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AgeVerifiers.sol": {
+			"keccak256": "0xd421b9fe504b341580158dd823e30a214abe4599a82667a3483df6a212d66879",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d45013c57f2c05c585c81bc858fb5bb1004aa93a5305a1721da0af7d484cfa86",
+				"dweb:/ipfs/QmbsGH45cXzKYpq5iWsaoiKbBEfshRxYBZT4xHwnhpocXm"
+			]
+		}
+	},
+	"version": 1
+}

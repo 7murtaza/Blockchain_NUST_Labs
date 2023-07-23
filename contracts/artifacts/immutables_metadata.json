@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "ADMIN_Address",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAdminAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/immutable.sol": "immutables"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/immutable.sol": {
+			"keccak256": "0x83395511f97917b32193c8af57b885c75bbe9856e6a52c42bdfccc8a268b21f3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e86022f6e46d61444ab206843542a2602837b7927c39e886c804ea16d365f1d",
+				"dweb:/ipfs/QmQZ75MUsEjP41hbDBor65r5kMFmDhCYBwT2D2jmMEge1E"
+			]
+		}
+	},
+	"version": 1
+}
