@@ -10,6 +10,7 @@ contract mappings{
         uint8 marks;
     }
      
+    // Creating a mapping
     mapping (address => student) result;
     address[] public student_result;
     
