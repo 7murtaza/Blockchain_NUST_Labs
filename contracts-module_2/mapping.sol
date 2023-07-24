@@ -3,6 +3,14 @@ pragma solidity ^0.8.2;
 
 contract mappings{
 
-
+    struct student
+    {
+        string name;
+        string subject;
+        uint8 marks;
+    }
+     
+    mapping (address => student) result;
+    address[] public student_result;
     
 }

@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts-module_2/modifir.sol": "Name"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts-module_2/modifir.sol": {
+			"keccak256": "0xc5b131df7cee83489a17463b0b0cb45bc06768454269e1d4344e2e54323b5fdd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42257b0514e3f0a396c29293b0a56b1b25592ccb699c7106b046d8134dd88160",
+				"dweb:/ipfs/QmckJ4FRsEwPMDvGzdmvpPFF9Qu2WFbMEM9RXLnvUAbvrz"
+			]
+		}
+	},
+	"version": 1
+}
