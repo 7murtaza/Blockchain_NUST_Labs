@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week8/exercise.sol": "exerciseOnAr"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week8/exercise.sol": {
+			"keccak256": "0x084fe43649c98b8dffefd8a4b10502cd24f40e6fefada0e5ff6450dc8a4f033a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://046a79eec1c3d39d093e8faca665e907e12149e3a9ba5c43c66029fa7216d582",
+				"dweb:/ipfs/QmVLqFSrAEiWaoBiTS5HXDvMeHm9NSZfZWknkC6ygLKxSg"
+			]
+		}
+	},
+	"version": 1
+}
