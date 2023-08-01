@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week8/lab-01-08-2023/BankAccountStruct.sol": "BankAccount"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week8/lab-01-08-2023/BankAccountStruct.sol": {
+			"keccak256": "0x2545f21f2d895162aa87282941ed1734dcffac82c6c0c03de5754671063b94f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e21f89217b8ddaf2ab5e3955a35f8295aa62fbda8750db60d3a7884a413d2ff7",
+				"dweb:/ipfs/QmSfqHNGeEaQbqGXMMTugxrtrBs675LJ75ebjwxaQdp4g1"
+			]
+		}
+	},
+	"version": 1
+}
