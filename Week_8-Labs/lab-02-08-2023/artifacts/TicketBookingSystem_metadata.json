@@ -36,10 +36,29 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getTicketType",
+				"name": "getTicketDay",
 				"outputs": [
 					{
 						"internalType": "enum TicketBookingSystem.Days",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getTicketType",
+				"outputs": [
+					{
+						"internalType": "enum TicketBookingSystem.TicketType",
 						"name": "",
 						"type": "uint8"
 					}
@@ -123,11 +142,11 @@
 	},
 	"sources": {
 		"week8/lab-02-08-2023/TicketBookingSystem.sol": {
-			"keccak256": "0xf429dc055dbd81d4ae212d1afbac86b2b1a665bc124641e9ce93fc8bb93031f3",
+			"keccak256": "0x086eec6d05c26d8d1ad924d15eef6f6c0df079e401760a4f7781b88d7d52982b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c6c80a86294c8a33fbf8eee8dec44a9a0b7a72726594b07bf3cbfd4a65cd1d65",
-				"dweb:/ipfs/QmY4j4gaRg513BwXT1PvndeRnwHWUaauon19tKCYSwZeDp"
+				"bzz-raw://1dfa133431d1a0308d63a5f5b45690365f0153912aeb7cee6ff64e9ce0232bc2",
+				"dweb:/ipfs/QmRYATz5M1EsDSB9kZawotSgFkXLMhF4DFoPg7Lw1GAc5g"
 			]
 		}
 	},

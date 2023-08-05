@@ -47,7 +47,7 @@ contract ControlFlow {
 
     function doWhileTest() public pure returns (uint256) {
         uint256 sum = 0;
-        uint256 i = 16;
+        uint256 i = 0;
         do {
         sum += i;
         i++;

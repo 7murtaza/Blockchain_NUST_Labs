@@ -6,8 +6,33 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "doWhileTest",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "max",
+						"type": "uint256"
+					}
+				],
+				"name": "NaturalNum",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,33 +40,20 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "forloopTest",
+				"name": "getter",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint256[]",
 						"name": "",
-						"type": "uint256"
+						"type": "uint256[]"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "whileTest",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -58,7 +70,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"week8/lab-02-08-2023/loops.sol": "ControlFlow"
+			"Week_8-Labs/lab-04-08-2023/exampleNatutalNumDeploy.sol": "Loop"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -72,12 +84,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"week8/lab-02-08-2023/loops.sol": {
-			"keccak256": "0xadb2f0d756761de98e42bf424adfafa0cfb02850ea4cafa4da98b2f67b436097",
+		"Week_8-Labs/lab-04-08-2023/exampleNatutalNumDeploy.sol": {
+			"keccak256": "0x1c1e676f79a2b1515c15c1b723a60726ff8474711bb34e95d006047dc78f5656",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://19d97b8c87c319a3c3a527a9289a56ef4f6bd35d0b53f14f04a1a4befbfe0f88",
-				"dweb:/ipfs/Qmafw95A7k7gstm3U8xCftxweC9LQNm3VYxjypEE58CMkZ"
+				"bzz-raw://d98da8666e86687a11962a705efeb7e6e46b1ecd7535cf3f6f133044adc1404a",
+				"dweb:/ipfs/QmZvb6GG1nYdgTM864o1aYuqTPFwhbiD9VGTWdJMz6yiLu"
 			]
 		}
 	},
