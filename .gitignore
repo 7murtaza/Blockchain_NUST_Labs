@@ -1,5 +1,4 @@
 scripts/
 tests/
 artifacts/
-Week_8-Labs/artifacts/
-.prettierrc/
+.deps/
