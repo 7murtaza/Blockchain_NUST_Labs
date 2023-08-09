@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "P1",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "P2",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "P3",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum PizzaDeli.pizzaOrder",
+						"name": "_s",
+						"type": "uint8"
+					}
+				],
+				"name": "setter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"week8/lab-01-08-2023/pizzaDeli.sol": "PizzaDeli"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"week8/lab-01-08-2023/pizzaDeli.sol": {
+			"keccak256": "0xedf1df00105b5ccf5b84825f7d99ab14977620cc22836f2c74b5a3553ad0c643",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2635776505c6f0b8dd2e36711dbcfa6ed10a1cd3bb84c7b57d835924cb28d539",
+				"dweb:/ipfs/QmTs6zmMWbLJaMPbRdin6w9MSW5PFaybAz72vnSP78oR2J"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "max",
+						"type": "uint256"
+					}
+				],
+				"name": "NaturalNum",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getter",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Week_8-Labs/lab-04-08-2023/exampleNatutalNumDeploy.sol": "Loop"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Week_8-Labs/lab-04-08-2023/exampleNatutalNumDeploy.sol": {
+			"keccak256": "0x1c1e676f79a2b1515c15c1b723a60726ff8474711bb34e95d006047dc78f5656",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d98da8666e86687a11962a705efeb7e6e46b1ecd7535cf3f6f133044adc1404a",
+				"dweb:/ipfs/QmZvb6GG1nYdgTM864o1aYuqTPFwhbiD9VGTWdJMz6yiLu"
+			]
+		}
+	},
+	"version": 1
+}
