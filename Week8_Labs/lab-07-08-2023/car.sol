@@ -15,25 +15,26 @@ contract CARs{
         uint Varient;
     }
 
-CAR car;
 
-function initCar1() public  {
-    CAR storage _car = car;
-    _car.Make = "Toyota";
-    _car.model = "Prado";
-    _car.Varient = 2000;
+CAR public car; 
+
+constructor(string memory _make, string memory _model, uint _varient) {
+    _make = car.Make;
+    _model = car.model;
+    _varient = car.Varient;
 
 }
-function initCar2() public  {
-    CAR memory _car = car;
-    car.Make = "Tesla";
-    car.model = "Y";
-    car.Varient= 1000;
-    CAR memory _ref = _car;
-    _ref.Make = "Toyota";
+function initCar1() public returns (CAR memory state, CAR memory local) {
+ CAR storage _car = car;
+ _car.model = "Ppp" ;
+ return(car, _car);
+ 
 }
+function initCar2() public view returns (CAR memory state, CAR memory local) {
+ CAR memory _car = car;
 
-function getter() public returns (CAR){
- return initCar1();
+ _car.Varient = 1000;
+
+ return (car, _car);
 }
 }
