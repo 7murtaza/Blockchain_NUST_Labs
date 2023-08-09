@@ -2,3 +2,4 @@ scripts/
 tests/
 artifacts/
 .deps/
+.prettierrc.json/
