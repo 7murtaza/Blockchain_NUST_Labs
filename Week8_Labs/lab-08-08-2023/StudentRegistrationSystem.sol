@@ -88,7 +88,7 @@ Department _dept, Status
 // 8) Implement a function to retrieve the count of students registered in ‘each
 // department’.
 
-function count() public view returns(){
+function count() public{
 
     return 
 
