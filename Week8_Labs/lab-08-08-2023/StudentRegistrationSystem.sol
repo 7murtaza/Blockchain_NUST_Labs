@@ -57,13 +57,13 @@ std[_rollNumber] = Student({
     });
 }
 
+
 // 6) Implement a function to update the student’s details by providing RollNo
 // and other necessary information.
 
 function update(string memory _name, uint _age, string memory _registrationDate, Department _dept, Status
  _status, uint _obtainedMarks, uint _rollNumber) public {
      Student storage student = std[_rollNumber];
-
      student.name = _name;
      student.age =_age;
      student.registrationDate =_registrationDate;
@@ -88,16 +88,32 @@ Department _dept, Status
 // 8) Implement a function to retrieve the count of students registered in ‘each
 // department’.
 
-function count() public{
+function count() public view returns (uint[4] memory departmentCounts) {
+    for (uint i = 1; std[i].age != 0; i++) {
+        Department dept = std[i].department;
+        departmentCounts[uint(dept)]++;
+    }
 
-    return 
+    return departmentCounts;
 
 }
 
 // 9) Implement a function to retrieve the details of Top 3 Achievers currently
 // enrolled in Blockchain.
 
+function Achievers() public view returns (uint) {
+   
+    uint max = 0;
+    for (uint i = 1; std[i].age != 0; i++) {
+        if (std[i].ObtainedMarks > max) {
+            max = std[i].ObtainedMarks;
+        }
+      
+    }
+    return max;
 
+
+}
 
 
 
