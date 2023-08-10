@@ -42,7 +42,6 @@ contract srs {
 
     mapping(uint256 => Student) public std;
     uint256[] rollNo;
-
     // 5) Implement a function to register a student by providing their necessary
     // attributes.
 
@@ -129,32 +128,63 @@ contract srs {
     // 9) Implement a function to retrieve the details of Top 3 Achievers currently
     // enrolled in Blockchain.
 
-    function Achievers()
-        public
-        view
-        returns (
-            uint256 first,
-            uint256 second,
-            uint256 third
-        )
-    {
-        uint256[] memory arr = rollNo;
-        for (uint256 j = 1; j<arr.length; j++) {
-            for (uint256 i = 1; i<arr.length-1; i++) {
-                if (std[arr[i]].ObtainedMarks < std[arr[i + 1]].ObtainedMarks) {
-                    uint256 temp = arr[i];
-                    arr[i] = arr[i+1];
-                    arr[i+1] = temp;
-                }
+    // function Achievers()
+    //     public
+    //     view
+    //     returns (
+    //         uint256 first,
+    //         uint256 second,
+    //         uint256 third
+    //     )
+    // {
+    //     uint256[] memory arr = rollNo;
+    //     for (uint256 j = 1; j<arr.length; j++) {
+    //         for (uint256 i = 1; i<arr.length-i-1; i++) {
+    //             if (std[arr[i]].ObtainedMarks < std[arr[i + 1]].ObtainedMarks) {
+    //                 uint256 temp = arr[i];
+    //                 arr[i] = arr[i+1];
+    //                 arr[i+1] = temp;
+    //             }
+    //         }}
+        
+    //     return (arr[0], arr[1], arr[2]);
+    // }
+    
+
+function Achievers()
+    public
+    view
+    returns (
+        uint256 first,
+        uint256 second,
+        uint256 third
+    )
+{
+    uint256[] memory arr = rollNo;
+    uint256 n = arr.length;
+
+    for (uint256 i = 0; i < n; i++) {
+        for (uint256 j = 0; j < n - i - 1; j++) {
+            if (std[arr[j]].ObtainedMarks < std[arr[j + 1]].ObtainedMarks) {
+                uint256 temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
-
-        return (arr[0], arr[1], arr[2]);
     }
+    
+    if (n >= 1) first = arr[0];
+    if (n >= 2) second = arr[1];
+    if (n >= 3) third = arr[2];
+
+    return (first, second, third);
+}
+
 
     // NOTE:
     // ➔ Ensure that the contract is properly organized with appropriate data
     // locations for storage variables.
     // ➔ Ensure that the contract is gas-efficient and handles potential edge
     // cases gracefully
+
 }
