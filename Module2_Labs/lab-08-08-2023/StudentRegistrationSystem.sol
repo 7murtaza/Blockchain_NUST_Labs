@@ -21,7 +21,7 @@ contract srs {
         Graduated,
         Expelled
     }
-
+    // Status public  s;
     // 3) Define a struct named ‘Student’ with properties: ‘name’, ‘age’,
     // ‘registrationDate’, ‘Department’, ‘Status’ and ‘ObtainedMarks’.
     // (ObtainedMarks would be 0 in case of ‘NotEnrolled’ and ‘Expelled’.)
@@ -35,7 +35,7 @@ contract srs {
         uint256 ObtainedMarks;
     }
 
-    // Student[] public students;
+    // Student public students;
 
     // 4) Use a mapping to store student RollNo and their corresponding Student
     // struct.
@@ -54,6 +54,9 @@ contract srs {
         uint256 _obtainedMarks,
         uint256 _rollNumber
     ) public {
+        if( _status== Status.Expelled || _status==Status.NotEnrolled){
+    _obtainedMarks = 0;
+}  
         std[_rollNumber] = Student({
             name: _name,
             age: _age,
@@ -61,7 +64,7 @@ contract srs {
             department: _dept,
             status: _status,
             ObtainedMarks: _obtainedMarks
-        });
+        });          
         rollNo.push(_rollNumber);
     }
 
@@ -161,10 +164,9 @@ function Achievers()
     )
 {
     uint256[] memory arr = rollNo;
-    uint256 n = arr.length;
 
-    for (uint256 i = 0; i < n; i++) {
-        for (uint256 j = 0; j < n - i - 1; j++) {
+    for (uint256 i = 0; i < arr.length-1; i++) {
+        for (uint256 j = 0; j < arr.length - i - 1 ; j++) {
             if (std[arr[j]].ObtainedMarks < std[arr[j + 1]].ObtainedMarks) {
                 uint256 temp = arr[j];
                 arr[j] = arr[j + 1];
@@ -173,11 +175,13 @@ function Achievers()
         }
     }
     
-    if (n >= 1) first = arr[0];
-    if (n >= 2) second = arr[1];
-    if (n >= 3) third = arr[2];
+    if (arr.length >= 1) first = arr[0];
+    if (arr.length >= 2) second = arr[1];
+    if (arr.length >= 3) third = arr[2];
 
     return (first, second, third);
+
+
 }
 
 
