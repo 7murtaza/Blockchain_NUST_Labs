@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
-
+//creating marketplace contract
 contract marketPlace{
 
     mapping (address => uint) public balance;
@@ -13,8 +13,8 @@ contract marketPlace{
         balance[_addr] = _initialBalance;
     }
 
-    function buy(address _buyer, address _seller, uint _cash) public virtual  {
-       require(balance[_buyer] !=0 || balance[_seller] != 0, "buyer or seller is not registered");
+    function buy(address _buyer, address _seller, uint _cash) public payable virtual {
+       require(balance[_buyer] !=0 && balance[_seller] != 0, "buyer or seller is not registered");
        require(_cash>0, "Cash must be greater than zero");
 
         balance[_buyer] -= _cash;
@@ -52,12 +52,11 @@ contract marketPlace{
 // o Send a relevant ‘error’ message if the ‘sender’ and the ‘buyer’ are the same
 // person.
 
-function sell(address _seller, address _buyer, uint _itemPrice) public virtual returns(string memory _transferedItem){
+function sell(address _seller, address _buyer, uint _itemPrice) public payable virtual returns(string memory _transferedItem){
     require(balance[_seller] != 0 || balance[_buyer] !=0, "buyer or seller is not registered");
-    require(_itemPrice>0, "itemPrice must be greater than zero");
+    require(_itemPrice>0 || _itemPrice == balance[_buyer], "itemPrice must be greater than zero or should match the cash of itemPrice");
     require(balance[_seller] != balance[_buyer], "seller and buyer cannot be same person");
     _transferedItem = "item will be shipped to buyer's location";
-
     return _transferedItem;
     }
 
@@ -83,7 +82,7 @@ contract premiumSeller is marketPlace {
         fee = _fee;
     }
 
-    function sell(address _seller, address _buyer, uint _itemPrice) public virtual override returns(string memory _transferedItem){
+    function sell(address _seller, address _buyer, uint _itemPrice) public payable virtual override returns(string memory _transferedItem){
         balance[_seller] -= fee;
         uint feeAmount = _itemPrice * fee / 100;
         address(this).balance;
@@ -121,7 +120,7 @@ contract vipBuyer is marketPlace{
         discount = _discount;
     }
     
-    function buy(address _buyer, address _seller, uint _cash) public virtual override {
+    function buy(address _buyer, address _seller, uint _cash) public payable  virtual override {
        require(balance[_buyer] !=0 || balance[_seller] != 0, "buyer or seller is not registered");
        require(_cash>0, "Cash must be greater than zero");
        require(balance[_seller] != balance[_buyer], "seller and buyer cannot be same person");
