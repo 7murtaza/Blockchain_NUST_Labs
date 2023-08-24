@@ -24,4 +24,3 @@ contract paymentContract {
         return address(this).balance;
     }
 }
-    
