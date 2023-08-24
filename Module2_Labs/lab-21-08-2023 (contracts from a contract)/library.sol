@@ -7,7 +7,6 @@ pragma solidity ^0.8.4;
 
 
 library maths{
-    
     function sum(uint _num1, uint _num2) public pure returns (uint _sum){
         return _sum = _num1 + _num2;
         
