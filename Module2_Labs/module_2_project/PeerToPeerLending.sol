@@ -5,7 +5,7 @@ import "Module2_Labs/module_2_project/credit.sol";
 import "Module2_Labs/module_2_project/safeMath.sol";
 
 contract PeerToPeerLending is ownable{
-    
+    using safeMath for uint;
     struct User{
         bool credited;
         address activeCredit;
