@@ -52,7 +52,6 @@ contract credit is ownable {
     event LogLenderVoteForFraud(address indexed _address, uint indexed timestamp );
     event LogLenderRefunded(address indexed _address, uint indexed _amount, uint indexed timestamp );
 
-    
     modifier isActive{
         require(active == true);
         _;
@@ -128,7 +127,7 @@ contract credit is ownable {
     } 
 
     function changeState(State _state) external onlyOwner {
-      state == _state;
+      state = _state;
       emit LogCreditStateChanged(state, block.timestamp);
     }
 
@@ -154,7 +153,7 @@ contract credit is ownable {
         }
         lenders[msg.sender] = true;
         lendersCount++;
-        lendersInvestedAmount[msg.sender] == lendersInvestedAmount[msg.sender].add(extraMoney);
+        lendersInvestedAmount[msg.sender] = lendersInvestedAmount[msg.sender].add(extraMoney);
         emit LogLenderInvestment(msg.sender, msg.value.sub(extraMoney), block.timestamp);
     }
     
