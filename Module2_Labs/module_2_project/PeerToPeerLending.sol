@@ -25,17 +25,12 @@ contract PeerToPeerLending is ownable{
         require(user[msg.sender].credited == false);
         require(user[msg.sender].fraudulent == false);
         require(user[msg.sender].activeCredit == address(0));
-
         user[msg.sender].credited = true;
         credit Credit = new credit(_requestedAmount, _repayment, _interest, _description);
         user[msg.sender].activeCredit = address(Credit);
-
         credits.push(address(Credit));
-
         user[msg.sender].allCredits.push(address(Credit));
-
         emit LogCreditCreated(address(Credit), msg.sender, block.timestamp);
-
         return address(Credit);
     }
 
@@ -49,9 +44,9 @@ contract PeerToPeerLending is ownable{
         return user[msg.sender].allCredits;
     }
 
-    function setFraudStatus(address _address) public returns (bool) {
-        bool fraudStatus = user[_address].fraudulent = true;
-        emit LogUserSetFraud(_address, fraudStatus, block.timestamp);
+    function setFraudStatus(address _borrower) public returns (bool) {
+        bool fraudStatus = user[_borrower].fraudulent = true;
+        emit LogUserSetFraud(_borrower, fraudStatus, block.timestamp);
         return fraudStatus;
     }
 
@@ -63,12 +58,11 @@ contract PeerToPeerLending is ownable{
 
     }
 
-    function changeCreditState(credit _Credit) public onlyOwner returns(bool){
+    function toggleCreditState(credit _Credit) public onlyOwner returns(bool){
         credit Credit = credit(_Credit);
         bool updatedActiveState = Credit.toggleActive();
         emit LogCreditActiveChanged(address(Credit), updatedActiveState, block.timestamp);
         return updatedActiveState;
     }
-
-
+    
 }
